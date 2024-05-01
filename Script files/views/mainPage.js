@@ -3,6 +3,7 @@ function mainPageView(){
     model.app.currentPage = 'mainPage';
     document.getElementById("app").innerHTML = /*HTML*/`
     <div class="topContainer">
+    <h1>Welcome to your personal Library</h1>
     ${mainButtons()}
     </div>
     <div class="bookListsContainer">
@@ -21,7 +22,7 @@ function mainButtons(){
 return `   <div class="leftButtonTop">
                 <div class="ButtonDiv" onclick= "">Your Library</div>
             </div>
-            <h1>Welcome to your personal Library</h1>
+           
             <div class="RightButtonTop">
                 <div class="ButtonDiv" onclick= "">Browse New Books</div>
             </div>`;
