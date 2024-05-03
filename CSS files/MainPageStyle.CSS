@@ -1,34 +1,60 @@
 * {
-    background-color: lightseagreen;
+    background-color: rgb(177, 122, 67);
 }
 
 .topContainer{
+    background-image: url(https://64.media.tumblr.com/51e371a99b96919bcd91a903b02101b7/0c1d807b60fd6fb5-83/s2560x500/fd1de5d6728a6fd2c8367e53812dfa3104df76e0.jpg);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 100px;
-    margin-top: 100px;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 250px;
+    margin-top: 0px;
+    margin-left: -10px;
+    margin-right: -0px;
+    margin-bottom: 500px;
+    z-index: 1000;
+    top: 0px;
 }
+
+.topContainer>h1{
+    background: none;
+    color: #f7af67;
+    font-size: 40px;
+}
+
+ .topContainer::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to top, rgb(255, 251, 251), transparent);
+    z-index: 100;
+} 
 
 .leftButtonTop{
     display: flex;
     position: fixed;
-    margin-left: -70vw;
+    margin-left: -65vw;
+    background: none;
 }
 
 .RightButtonTop{
     display: flex;
     position: fixed;
-    margin-right: -70vw;
+    margin-right: -65vw;
+    background: none;
 }
 
 .ButtonDiv{
     user-select: none;
-    border: solid black 1px;
+    border: solid rgb(255, 255, 255) 1px;
     border-radius: 40px;
-    background-color: steelblue;
-    box-shadow: 2px 4px;
+    background-color: rgb(205, 123, 64);
+    box-shadow: white 2px 4px;
     height: 50px;
     width: 400px;
     cursor: pointer;
@@ -38,33 +64,73 @@
 }
 
 .ButtonDiv:hover{
-    background-color: lightskyblue;
+    background-color: rgb(229, 183, 149);
+    border: black;
 }
 
 .ButtonDiv:active{
     transform: translateY(2px);
-    box-shadow: 0px 0px;
+    box-shadow: rgb(255, 255, 255) 0px 0px;
 }
 
+
 .bookListsContainer{
-    margin-top: 100px;
+    margin-top: 200px;
+    margin-left: -10px;
+    margin-right: -10px;
+    z-index: 200px;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
 }
 
+.bookListsContainer::before{
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    margin-right: -20px;
+    margin-top: 250px;
+    background: linear-gradient(to top,transparent, rgb(255, 255, 255));
+    scroll-behavior: smooth;
+}
+
 .mainPageBookContainer{
-    background-color: steelblue;
-    height: 300px;
+    background-color: rgb(111, 82, 53);
+    height: 550px;
     width: 96vw;
     margin: 20px;
     border-radius: 5px;
     overflow: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    box-shadow: rgb(1, 61, 61) 5px 10px 10px;
-    
+    box-shadow: rgb(255, 255, 255) 5px 10px 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.book{
+    padding: 15px;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+
+.book>b{
+    background-color: transparent;
+}
+
+.bookCover{
+   height: 300px;
+   width: auto;
+}
+
+.bookCover:hover{
+    cursor: pointer;
+    height: 400px;
+    width: auto;
 }

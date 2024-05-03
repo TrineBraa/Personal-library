@@ -1,0 +1,80 @@
+.bookListsLibraryContainer{
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    z-index: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookListsLibraryContainer::before{
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    margin-right: -20px;
+    margin-top: 250px;
+    background: linear-gradient(to top,transparent, rgb(255, 255, 255));
+    scroll-behavior: smooth;
+}
+
+.libraryButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 100px;
+    margin-top: 230px;
+}
+
+.libraryButton{
+    cursor: pointer;
+    border: 2px white solid;
+    border-radius: 10%;
+    height: 40px;
+    width: 200px;
+    margin: 80px;
+    background-color: rgb(111, 82, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.libraryButton:hover{
+    background-color: rgb(229, 183, 149);
+    border: none;
+}
+
+.activeButton{
+    background-color: rgb(205, 123, 64);
+    user-select: none;
+}
+
+.allBookContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.libraryBook{
+height: 500px;
+width: 300px;
+padding: 30px;
+}
+
+.libraryCover{
+height: 400px;
+height: auto;
+user-select: none;
+}
+
+.libraryCover:hover{
+    height: 500px;
+    width: auto;
+    cursor: pointer;
+}

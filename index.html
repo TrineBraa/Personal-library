@@ -6,8 +6,8 @@
     <title>Personal Library</title>
     <!-- Stylesheets -->
         <link rel="stylesheet" href="./CSS files/MainPageStyle.CSS">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./CSS files/mainLibStyle.CSS">
+        <link rel="stylesheet" href="./CSS files/mainBrowseStyle.CSS">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="">
@@ -16,9 +16,9 @@
         <link rel="stylesheet" href="">
 
     <!-- Icons -->
-
+    <script src="https://kit.fontawesome.com/266d78abdb.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="viewSwitcher()">
     <div id="app"></div>
 
     <!-- Model -->
@@ -29,19 +29,19 @@
 
     <!-- Views -->
         <script src="./Script files/views/mainPage.js"></script>
-        <script src=""></script>
-        <script src=""></script>
-        <script src=""></script>
-        <script src=""></script>
-        <script src=""></script>
-        <script src=""></script>
+        <script src="./Script files/views/mainLibrary.js"></script>
+        <script src="./Script files/views/mainBrowse.js"></script>
+        <script src="./Script files/views/Global.js"></script>
+        <script src="./Script files/views/Currentlibrary.js"></script>
+        <script src="./Script files/views/TBRlibrary.js"></script>
+        <script src="./Script files/views/FinishedLibrary.js"></script>
         <script src=""></script>
 
     <!-- Controllers -->
         <script src="./Script files/Control/mainPageControl.js"></script>
-        <script src=""></script>
-        <script src=""></script>
-        <script src=""></script>
+        <script src="./Script files/Control/mainLibraryControl.js"></script>
+        <script src="./Script files/Control/mainBrowseControl.js"></script>
+        <script src="./Script files/Control/globalController.js"></script>
         <script src=""></script>
         <script src=""></script>
         <script src=""></script>
